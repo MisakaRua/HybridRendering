@@ -1,0 +1,3 @@
+#pragma once
+
+#define DXUP_VERSION "@VCS_TAG@"
