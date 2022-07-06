@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\hybrid_rendering\src\HybridRendering.cpp">
+      <Filter>hybrid_rendering</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="hybrid_rendering">
+      <UniqueIdentifier>{5830C256-B12B-3358-B4C0-43C50E347A23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

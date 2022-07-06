@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_cfg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_cpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_cross.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_cross_c.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_cross_parsed_ir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_cross_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_glsl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_hlsl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_msl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_reflect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\GLSL.std.450.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-cross\spirv_cross_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{31A21BFB-502C-35EB-8EA0-CDF031E8743C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{2CAE8681-A1A3-3D92-9DE2-A080365DD67E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
