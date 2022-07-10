@@ -432,6 +432,15 @@ namespace dxup {
     if (riid == __uuidof(IDirect3DDevice9Ex) || riid == __uuidof(IDirect3DDevice9) || riid == __uuidof(IUnknown))
       *ppv = ref(this);
 
+	/* 2022-7-10
+	 * The program is set to return E_NO_INTERFACE no matter what kind of riid, and I think this is a bug.
+	 * 
+	 * When ppv is not a nullptr, this function will always return E_NO_INTERFACE, which will always trigger
+	 * the DX_CHECK failed. The DX_CHECK assertion is at line 655 of file render_d3d9.cpp in bgfx. The line is:
+	 *     DX_CHECK(m_device->QueryInterface(IID_IDirect3DDevice9Ex, (void**)&m_deviceEx))
+	 * 
+	 * I guess the return value should be changed.
+	 */
     return E_NOINTERFACE;
   }
 
