@@ -1,243 +1,243 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\bgfx.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\bgfx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\debug_renderdoc.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\debug_renderdoc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\dxgi.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\dxgi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_egl.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_egl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_html5.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_html5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_wgl.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_wgl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\nvapi.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\nvapi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_agc.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_agc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_d3d11.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_d3d11.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_d3d12.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_d3d12.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_d3d9.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_d3d9.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_gl.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_gl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_gnm.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_gnm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_noop.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_noop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_nvn.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_nvn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_vk.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_vk.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_webgpu.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_webgpu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\shader.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\shader_dx9bc.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\shader_dx9bc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\shader_dxbc.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\shader_dxbc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\shader_spirv.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\shader_spirv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\topology.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\topology.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\vertexlayout.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\vertexlayout.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\include\bgfx\bgfx.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\include\bgfx\bgfx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\include\bgfx\c99\bgfx.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\include\bgfx\c99\bgfx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\include\bgfx\defines.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\include\bgfx\defines.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\include\bgfx\embedded_shader.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\include\bgfx\embedded_shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\include\bgfx\platform.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\include\bgfx\platform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\amalgamated.cpp">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\amalgamated.cpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\amalgamated.mm">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\amalgamated.mm">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\bgfx_p.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\bgfx_p.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\charset.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\charset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\config.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\debug_renderdoc.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\debug_renderdoc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\dxgi.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\dxgi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\emscripten.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\emscripten.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\fs_clear0.bin.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\fs_clear0.bin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\fs_clear1.bin.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\fs_clear1.bin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\fs_clear2.bin.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\fs_clear2.bin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\fs_clear3.bin.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\fs_clear3.bin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\fs_clear4.bin.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\fs_clear4.bin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\fs_clear5.bin.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\fs_clear5.bin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\fs_clear6.bin.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\fs_clear6.bin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\fs_clear7.bin.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\fs_clear7.bin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\fs_debugfont.bin.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\fs_debugfont.bin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_eagl.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_eagl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_eagl.mm">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_eagl.mm">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_egl.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_egl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_glx.cpp">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_glx.cpp">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_glx.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_glx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_html5.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_html5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_nsgl.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_nsgl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_nsgl.mm">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_nsgl.mm">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glcontext_wgl.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glcontext_wgl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\glimports.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\glimports.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\nvapi.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\nvapi.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_d3d.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_d3d.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_d3d11.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_d3d11.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_d3d12.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_d3d12.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_d3d9.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_d3d9.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_gl.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_gl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_mtl.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_mtl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_mtl.mm">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_mtl.mm">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_vk.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_vk.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\renderer_webgpu.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\renderer_webgpu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\shader.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\shader_dx9bc.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\shader_dx9bc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\shader_dxbc.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\shader_dxbc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\shader_spirv.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\shader_spirv.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\topology.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\topology.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\version.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\version.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\vertexlayout.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\vertexlayout.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\vs_clear.bin.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\vs_clear.bin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\src\vs_debugfont.bin.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\src\vs_debugfont.bin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\CMakeLists.txt" />
+    <CustomBuild Include="D:\Programming\CG\NeteaseIntern\HybridRendering\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{31A21BFB-502C-35EB-8EA0-CDF031E8743C}</UniqueIdentifier>
+      <UniqueIdentifier>{08E9A3EC-344F-3ED8-BB4B-BB17B1849A8D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{2CAE8681-A1A3-3D92-9DE2-A080365DD67E}</UniqueIdentifier>
+      <UniqueIdentifier>{9CEF898C-1612-3038-BDBE-72448A6FEEF8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

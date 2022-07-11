@@ -59,6 +59,4 @@ add_custom_command(TARGET hybrid_rendering POST_BUILD
 	# COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/hybrid_rendering/shaders/bin/glsl ${CMAKE_CURRENT_SOURCE_DIR}/build/shaders/glsl
 	# COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/hybrid_rendering/shaders/bin/dx11 ${CMAKE_CURRENT_SOURCE_DIR}/build/shaders/dx11
 	COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR}/hybrid_rendering/shaders/bin/dx9 ${CMAKE_CURRENT_SOURCE_DIR}/build/shaders/dx9
-    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_SOURCE_DIR}/dxup/build/src/d3d9/d3d9.dll ${CMAKE_CURRENT_SOURCE_DIR}/build/Debug
-    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_SOURCE_DIR}/dxup/build/src/d3d9/d3d9.pdb ${CMAKE_CURRENT_SOURCE_DIR}/build/Debug
 )

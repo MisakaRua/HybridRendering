@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|x64">
+			<Configuration>debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{8CC453FA-6C7E-4804-A0E1-6F061717D326}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<RootNamespace>libutil</RootNamespace>
+		<Platform>x64</Platform>
+		<ProjectName>libutil</ProjectName>
+		<WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+		<PlatformToolset>v141</PlatformToolset>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>719bc35@@util@sta\</IntDir>
+		<TargetName>libutil</TargetName>
+		<TargetExt>.a</TargetExt>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+			<ExceptionHandling>Sync</ExceptionHandling>
+			<AdditionalIncludeDirectories>719bc35@@util@sta;.;..\..\..\src\util;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<WarningLevel>Level2</WarningLevel>
+			<Optimization>Disabled</Optimization>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+			<LanguageStandard>stdcpplatest</LanguageStandard>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+			<AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)libutil.a</OutputFile>
+			<SubSystem>Windows</SubSystem>
+			<ProgramDataBaseFileName>$(OutDir)util.pdb</ProgramDataBaseFileName>
+			<TargetMachine>MachineX64</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<None Include="..\..\..\src\util\meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLInclude Include="..\..\version.h"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="..\..\..\src\util\private_data_d3d.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>719bc35@@util@sta;.;..\..\..\src\util;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)private_data_d3d.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\util\log.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>719bc35@@util@sta;.;..\..\..\src\util;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)log.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\util\config.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>719bc35@@util@sta;.;..\..\..\src\util;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)config.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\util\shared_conversions.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>719bc35@@util@sta;.;..\..\..\src\util;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)shared_conversions.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\util\d3dcompiler_helpers.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>719bc35@@util@sta;.;..\..\..\src\util;..\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)d3dcompiler_helpers.cpp.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\REGEN.vcxproj">
+			<Project>{49E492C3-6E5A-46E1-B410-0155CA8EF660}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\version.h@cus.vcxproj">
+			<Project>{F00D9B60-F4D5-4FBF-A904-A69312D39962}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

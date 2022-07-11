@@ -3,20 +3,20 @@
 cmake_policy(SET CMP0009 NEW)
 
 # HYBRID_RENDERING_SRC at cmake/hybrid_rendering.cmake:4 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "D:/ComputerGraphics/Netease_Intern/HybridRendering/hybrid_rendering/src/*.cpp")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "D:/Programming/CG/NeteaseIntern/HybridRendering/hybrid_rendering/src/*.cpp")
 set(OLD_GLOB
-  "D:/ComputerGraphics/Netease_Intern/HybridRendering/hybrid_rendering/src/HybridRendering.cpp"
+  "D:/Programming/CG/NeteaseIntern/HybridRendering/hybrid_rendering/src/HybridRendering.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "D:/ComputerGraphics/Netease_Intern/HybridRendering/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/Programming/CG/NeteaseIntern/HybridRendering/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # HYBRID_RENDERING_SRC at cmake/hybrid_rendering.cmake:4 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "D:/ComputerGraphics/Netease_Intern/HybridRendering/hybrid_rendering/src/*.h")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "D:/Programming/CG/NeteaseIntern/HybridRendering/hybrid_rendering/src/*.h")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "D:/ComputerGraphics/Netease_Intern/HybridRendering/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "D:/Programming/CG/NeteaseIntern/HybridRendering/build/CMakeFiles/cmake.verify_globs")
 endif()

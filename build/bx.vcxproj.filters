@@ -1,84 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\allocator.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\allocator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\bounds.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\bounds.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\bx.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\bx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\commandline.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\commandline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\crtnone.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\crtnone.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\debug.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\debug.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\dtoa.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\dtoa.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\easing.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\easing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\file.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\file.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\filepath.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\filepath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\hash.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\hash.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\math.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\math.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\mutex.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\mutex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\os.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\os.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\process.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\process.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\semaphore.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\semaphore.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\settings.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\settings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\sort.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\sort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\string.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\string.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\thread.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\thread.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\timer.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\timer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\url.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\url.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bx\src\amalgamated.cpp">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bx\src\amalgamated.cpp">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\CMakeLists.txt" />
+    <CustomBuild Include="D:\Programming\CG\NeteaseIntern\HybridRendering\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{2CAE8681-A1A3-3D92-9DE2-A080365DD67E}</UniqueIdentifier>
+      <UniqueIdentifier>{9CEF898C-1612-3038-BDBE-72448A6FEEF8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

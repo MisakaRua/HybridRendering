@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glsl-optimizer\src\mesa\main\imports.c">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glsl-optimizer\src\mesa\main\imports.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glsl-optimizer\src\mesa\program\prog_hash_table.c">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glsl-optimizer\src\mesa\program\prog_hash_table.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glsl-optimizer\src\mesa\program\symbol_table.c">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glsl-optimizer\src\mesa\program\symbol_table.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\CMakeLists.txt" />
+    <CustomBuild Include="D:\Programming\CG\NeteaseIntern\HybridRendering\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{2CAE8681-A1A3-3D92-9DE2-A080365DD67E}</UniqueIdentifier>
+      <UniqueIdentifier>{9CEF898C-1612-3038-BDBE-72448A6FEEF8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

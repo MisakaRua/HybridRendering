@@ -1,0 +1,6 @@
+[options]
+backend = vs2017
+buildtype = debug
+
+[properties]
+

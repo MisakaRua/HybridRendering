@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bimg\3rdparty\edtaa3\edtaa3func.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bimg\3rdparty\edtaa3\edtaa3func.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bimg\3rdparty\edtaa3\edtaa3func.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bimg\3rdparty\edtaa3\edtaa3func.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\CMakeLists.txt" />
+    <CustomBuild Include="D:\Programming\CG\NeteaseIntern\HybridRendering\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{31A21BFB-502C-35EB-8EA0-CDF031E8743C}</UniqueIdentifier>
+      <UniqueIdentifier>{08E9A3EC-344F-3ED8-BB4B-BB17B1849A8D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{2CAE8681-A1A3-3D92-9DE2-A080365DD67E}</UniqueIdentifier>
+      <UniqueIdentifier>{9CEF898C-1612-3038-BDBE-72448A6FEEF8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

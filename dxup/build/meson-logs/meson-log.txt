@@ -1,0 +1,186 @@
+Build started at 2022-07-11T11:28:28.148011
+Main binary: C:\Users\Misaka\AppData\Local\Programs\Python\Python39\python.exe
+Build Options: -Dbackend=vs2017 -Dbuildtype=debug
+Python system: Windows
+The Meson build system
+Version: 0.63.0
+Source dir: D:\Programming\CG\NeteaseIntern\HybridRendering\dxup
+Build dir: D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build
+Build type: native build
+Project name: dxup
+Project version: v0.00
+Activating VS 15.9.49
+Sanity testing C compiler: cl
+Is cross compiler: False.
+Sanity check compiler command line: cl sanitycheckc.c /Fesanitycheckc.exe /MDd /nologo /showIncludes /utf-8 /link
+Sanity check compile stdout:
+sanitycheckc.c
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\sanitycheckc.exe
+C compiler for the host machine: cl (msvc 19.16.27048 "Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27048 for x64")
+C linker for the host machine: link link 14.16.27048.0
+Sanity testing C++ compiler: cl
+Is cross compiler: False.
+Sanity check compiler command line: cl sanitycheckcpp.cc /Fesanitycheckcpp.exe /MDd /nologo /showIncludes /utf-8 /Zc:__cplusplus /link
+Sanity check compile stdout:
+sanitycheckcpp.cc
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\sanitycheckcpp.exe
+C++ compiler for the host machine: cl (msvc 19.16.27048 "Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27048 for x64")
+C++ linker for the host machine: link link 14.16.27048.0
+Sanity testing C compiler: cl
+Is cross compiler: False.
+Sanity check compiler command line: cl sanitycheckc.c /Fesanitycheckc.exe /MDd /nologo /showIncludes /utf-8 /link
+Sanity check compile stdout:
+sanitycheckc.c
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\sanitycheckc.exe
+C compiler for the build machine: cl (msvc 19.16.27048 "Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27048 for x64")
+C linker for the build machine: link link 14.16.27048.0
+Sanity testing C++ compiler: cl
+Is cross compiler: False.
+Sanity check compiler command line: cl sanitycheckcpp.cc /Fesanitycheckcpp.exe /MDd /nologo /showIncludes /utf-8 /Zc:__cplusplus /link
+Sanity check compile stdout:
+sanitycheckcpp.cc
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\sanitycheckcpp.exe
+C++ compiler for the build machine: cl (msvc 19.16.27048 "Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27048 for x64")
+C++ linker for the build machine: link link 14.16.27048.0
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+meson.build:17: WARNING: Consider using the built-in option for language standard version instead of using "/std:c++latest".
+Running compile:
+Working directory:  D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmpm7kgwlt8
+Command line:  cl D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmpm7kgwlt8\testfile.cpp /FoD:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmpm7kgwlt8\output.obj /nologo /showIncludes /utf-8 /Zc:__cplusplus /c /nologo /showIncludes /utf-8 /Zc:__cplusplus /c /Od /Oi- /EHsc 
+
+Code:
+ #ifndef __WINE__
+#error 1
+#endif
+Compiler stdout:
+ testfile.cpp
+D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmpm7kgwlt8\testfile.cpp(2): fatal error C1189: #error:  1
+
+Compiler stderr:
+ 
+Checking if "winelib check" compiles: NO 
+Running compile:
+Working directory:  D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmp8qg6twvx
+Command line:  cl D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmp8qg6twvx\testfile.cpp /FeD:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmp8qg6twvx\output.exe /nologo /showIncludes /utf-8 /Zc:__cplusplus /MDd /nologo /showIncludes /utf-8 /Zc:__cplusplus /Od /Oi- d3d11.lib /link /nologo /release /nologo 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ testfile.cpp
+
+Compiler stderr:
+ 
+Library d3d11 found: YES
+Running compile:
+Working directory:  D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmppr5ogt20
+Command line:  cl D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmppr5ogt20\testfile.cpp /FeD:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmppr5ogt20\output.exe /nologo /showIncludes /utf-8 /Zc:__cplusplus /MDd /nologo /showIncludes /utf-8 /Zc:__cplusplus /Od /Oi- dxgi.lib /link /nologo /release /nologo 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ testfile.cpp
+
+Compiler stderr:
+ 
+Library dxgi found: YES
+Running compile:
+Working directory:  D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmp2vvccgss
+Command line:  cl D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmp2vvccgss\testfile.cpp /FeD:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmp2vvccgss\output.exe /nologo /showIncludes /utf-8 /Zc:__cplusplus /MDd /nologo /showIncludes /utf-8 /Zc:__cplusplus /Od /Oi- shlwapi.lib /link /nologo /release /nologo 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ testfile.cpp
+
+Compiler stderr:
+ 
+Library shlwapi found: YES
+Running compile:
+Working directory:  D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmp06m_5liu
+Command line:  cl D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmp06m_5liu\testfile.cpp /FeD:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmp06m_5liu\output.exe /nologo /showIncludes /utf-8 /Zc:__cplusplus /MDd /nologo /showIncludes /utf-8 /Zc:__cplusplus /Od /Oi- 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        }
+Compiler stdout:
+ testfile.cpp
+Note: including file: C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\stdio.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\corecrt.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\vcruntime.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\sal.h
+Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\concurrencysal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\vadefs.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\corecrt_wstdio.h
+Note: including file:   C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt\corecrt_stdio_config.h
+
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Library d3dcompiler_43 found: YES
+Running compile:
+Working directory:  D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmppxbqop_5
+Command line:  cl D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmppxbqop_5\testfile.cpp /FeD:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\tmppxbqop_5\output.exe /nologo /showIncludes /utf-8 /Zc:__cplusplus /MDd /nologo /showIncludes /utf-8 /Zc:__cplusplus /Od /Oi- d3dcompiler.lib /link /nologo /release /nologo 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ testfile.cpp
+
+Compiler stderr:
+ 
+Library d3dcompiler found: YES
+Build targets in project: 6
+NOTICE: Future-deprecated features used:
+ * 0.56.0: {'meson.source_root'}
+
+dxup v0.00
+
+  User defined options
+    backend  : vs2017
+    buildtype: debug
+
+Generating vcxproj version.h.
+Generating vcxproj util.
+Generating vcxproj dx9asm.
+Generating vcxproj d3d9.
+Generating vcxproj d3d10_1.
+Generating vcxproj dxgi.

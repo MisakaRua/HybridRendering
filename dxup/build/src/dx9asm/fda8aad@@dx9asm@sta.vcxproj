@@ -1,0 +1,146 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|x64">
+			<Configuration>debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{439AB4AC-641B-40BD-B448-27A51C2F4B35}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<RootNamespace>libdx9asm</RootNamespace>
+		<Platform>x64</Platform>
+		<ProjectName>libdx9asm</ProjectName>
+		<WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>StaticLibrary</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+		<PlatformToolset>v141</PlatformToolset>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>fda8aad@@dx9asm@sta\</IntDir>
+		<TargetName>libdx9asm</TargetName>
+		<TargetExt>.a</TargetExt>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+			<ExceptionHandling>Sync</ExceptionHandling>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<WarningLevel>Level2</WarningLevel>
+			<Optimization>Disabled</Optimization>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+			<LanguageStandard>stdcpplatest</LanguageStandard>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+			<AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)libdx9asm.a</OutputFile>
+			<SubSystem>Windows</SubSystem>
+			<ProgramDataBaseFileName>$(OutDir)dx9asm.pdb</ProgramDataBaseFileName>
+			<TargetMachine>MachineX64</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<None Include="..\..\..\src\dx9asm\meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="..\..\..\src\dx9asm\dx9asm_operations.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)dx9asm_operations.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\dx9asm\dx9asm_translator.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)dx9asm_translator.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\dx9asm\dx9asm_util.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)dx9asm_util.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\dx9asm\dx9asm_modifiers.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)dx9asm_modifiers.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\dx9asm\dx9asm_operand.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)dx9asm_operand.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\dx9asm\dx9asm_unique_operations.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)dx9asm_unique_operations.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\dx9asm\dx9asm_standard_operations.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)dx9asm_standard_operations.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\dx9asm\dx9asm_register_map.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)dx9asm_register_map.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\dx9asm\dxbc_bytecode.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)dxbc_bytecode.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\dx9asm\dxbc_helpers.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)dxbc_helpers.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\dx9asm\dxbc_chunks.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)dxbc_chunks.cpp.obj</ObjectFileName>
+		</CLCompile>
+		<CLCompile Include="..\..\..\src\dx9asm\../extern/gpuopen/DXBCChecksum.cpp">
+			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>fda8aad@@dx9asm@sta;.;..\..\..\src\dx9asm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir).._extern_gpuopen_DXBCChecksum.cpp.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\REGEN.vcxproj">
+			<Project>{49E492C3-6E5A-46E1-B410-0155CA8EF660}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

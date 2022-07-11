@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|x64">
+			<Configuration>debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{972D3E0F-1DF8-4700-9F85-9D51BCC866F0}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<RootNamespace>RUN_INSTALL</RootNamespace>
+		<Platform>x64</Platform>
+		<ProjectName>RUN_INSTALL</ProjectName>
+		<WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+		<UseMultiToolTask>true</UseMultiToolTask>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Utility</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<UseOfMfc>false</UseOfMfc>
+		<PlatformToolset>v141</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>install-temp\</IntDir>
+		<TargetName>RUN_INSTALL</TargetName>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<Midl>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<OutputDirectory>$(IntDir)</OutputDirectory>
+			<HeaderFileName>%(Filename).h</HeaderFileName>
+			<TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+			<InterfaceIdentifierFilename>%(Filename)_i.c</InterfaceIdentifierFilename>
+			<ProxyFileName>%(Filename)_p.c</ProxyFileName>
+		</Midl>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<CustomBuild Include="D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\run_install.rule">
+			<Command>setlocal
+&quot;C:\Users\Misaka\AppData\Local\Programs\Python\Python39\Scripts\meson&quot; &quot;install&quot; &quot;--no-rebuild&quot;
+if %%errorlevel%% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %%errorlevel%% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %%1
+:cmDone
+if %%errorlevel%% neq 0 goto :VCEnd</Command>
+			<Outputs>D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\meson-private\outofdate.file</Outputs>
+		</CustomBuild>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\REGEN.vcxproj">
+			<Project>{49E492C3-6E5A-46E1-B410-0155CA8EF660}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

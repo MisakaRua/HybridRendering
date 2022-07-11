@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C94F1F53-E92A-3999-A329-3572AF22115B}</ProjectGuid>
+    <ProjectGuid>{44E9C5CD-1A28-3602-BA8A-0BB22846B754}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -56,26 +56,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ComputerGraphics\Netease_Intern\HybridRendering\build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Programming\CG\NeteaseIntern\HybridRendering\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glslang.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glslang</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ComputerGraphics\Netease_Intern\HybridRendering\build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Programming\CG\NeteaseIntern\HybridRendering\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glslang.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glslang</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ComputerGraphics\Netease_Intern\HybridRendering\build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Programming\CG\NeteaseIntern\HybridRendering\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glslang.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glslang</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ComputerGraphics\Netease_Intern\HybridRendering\build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Programming\CG\NeteaseIntern\HybridRendering\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glslang.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glslang</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -96,10 +96,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ENABLE_OPT=1;ENABLE_HLSL=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -112,7 +112,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4005;4065;4100;4127;4189;4244;4310;4389;4456;4457;4458;4702;4715;4838</DisableSpecificWarnings>
@@ -133,10 +133,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ENABLE_OPT=1;ENABLE_HLSL=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -149,7 +149,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4005;4065;4100;4127;4189;4244;4310;4389;4456;4457;4458;4702;4715;4838</DisableSpecificWarnings>
@@ -170,10 +170,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ENABLE_OPT=1;ENABLE_HLSL=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -186,7 +186,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -206,10 +206,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ENABLE_OPT=1;ENABLE_HLSL=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\spirv-tools\source;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Include;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\Public;D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -221,10 +221,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/ComputerGraphics/Netease_Intern/HybridRendering/CMakeLists.txt</Message>
+    <CustomBuild Include="D:\Programming\CG\NeteaseIntern\HybridRendering\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Programming/CG/NeteaseIntern/HybridRendering/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/ComputerGraphics/Netease_Intern/HybridRendering -BD:/ComputerGraphics/Netease_Intern/HybridRendering/build --check-stamp-file D:/ComputerGraphics/Netease_Intern/HybridRendering/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Programming/CG/NeteaseIntern/HybridRendering -BD:/Programming/CG/NeteaseIntern/HybridRendering/build --check-stamp-file D:/Programming/CG/NeteaseIntern/HybridRendering/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -232,12 +232,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeCCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeCXXCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeRCCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeSystem.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\cmake.verify_globs;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\astc-codec.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\astc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\dear-imgui.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\edtaa3.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\etc1.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\etc2.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\fcpp.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\glsl-optimizer.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\glslang.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\iqa.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\libsquish.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\meshoptimizer.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\nvtt.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\pvrtc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\spirv-cross.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\spirv-tools.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\tinyexr.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\webgpu.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bgfx.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bimg.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bx.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\examples.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\hybrid_rendering.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\shared.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\geometryc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\geometryv.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\shaderc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\texturec.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\texturev.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\util\ConfigureDebugging.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\generated\shader.cpp.in;D:\ComputerGraphics\Netease_Intern\HybridRendering\generated\vertexlayout.cpp.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeCCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeCXXCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeRCCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeSystem.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\cmake.verify_globs;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\astc-codec.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\astc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\dear-imgui.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\edtaa3.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\etc1.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\etc2.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\fcpp.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\glsl-optimizer.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\glslang.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\iqa.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\libsquish.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\meshoptimizer.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\nvtt.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\pvrtc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\spirv-cross.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\spirv-tools.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\tinyexr.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\webgpu.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bgfx.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bimg.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bx.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\examples.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\hybrid_rendering.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\shared.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\geometryc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\geometryv.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\shaderc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\texturec.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\texturev.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\util\ConfigureDebugging.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\generated\shader.cpp.in;D:\Programming\CG\NeteaseIntern\HybridRendering\generated\vertexlayout.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/ComputerGraphics/Netease_Intern/HybridRendering/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Programming/CG/NeteaseIntern/HybridRendering/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/ComputerGraphics/Netease_Intern/HybridRendering -BD:/ComputerGraphics/Netease_Intern/HybridRendering/build --check-stamp-file D:/ComputerGraphics/Netease_Intern/HybridRendering/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Programming/CG/NeteaseIntern/HybridRendering -BD:/Programming/CG/NeteaseIntern/HybridRendering/build --check-stamp-file D:/Programming/CG/NeteaseIntern/HybridRendering/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -245,12 +245,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeCCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeCXXCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeRCCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeSystem.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\cmake.verify_globs;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\astc-codec.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\astc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\dear-imgui.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\edtaa3.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\etc1.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\etc2.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\fcpp.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\glsl-optimizer.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\glslang.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\iqa.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\libsquish.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\meshoptimizer.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\nvtt.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\pvrtc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\spirv-cross.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\spirv-tools.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\tinyexr.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\webgpu.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bgfx.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bimg.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bx.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\examples.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\hybrid_rendering.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\shared.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\geometryc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\geometryv.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\shaderc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\texturec.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\texturev.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\util\ConfigureDebugging.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\generated\shader.cpp.in;D:\ComputerGraphics\Netease_Intern\HybridRendering\generated\vertexlayout.cpp.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeCCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeCXXCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeRCCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeSystem.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\cmake.verify_globs;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\astc-codec.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\astc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\dear-imgui.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\edtaa3.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\etc1.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\etc2.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\fcpp.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\glsl-optimizer.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\glslang.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\iqa.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\libsquish.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\meshoptimizer.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\nvtt.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\pvrtc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\spirv-cross.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\spirv-tools.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\tinyexr.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\webgpu.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bgfx.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bimg.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bx.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\examples.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\hybrid_rendering.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\shared.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\geometryc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\geometryv.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\shaderc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\texturec.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\texturev.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\util\ConfigureDebugging.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\generated\shader.cpp.in;D:\Programming\CG\NeteaseIntern\HybridRendering\generated\vertexlayout.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/ComputerGraphics/Netease_Intern/HybridRendering/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Programming/CG/NeteaseIntern/HybridRendering/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/ComputerGraphics/Netease_Intern/HybridRendering -BD:/ComputerGraphics/Netease_Intern/HybridRendering/build --check-stamp-file D:/ComputerGraphics/Netease_Intern/HybridRendering/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Programming/CG/NeteaseIntern/HybridRendering -BD:/Programming/CG/NeteaseIntern/HybridRendering/build --check-stamp-file D:/Programming/CG/NeteaseIntern/HybridRendering/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -258,12 +258,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeCCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeCXXCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeRCCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeSystem.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\cmake.verify_globs;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\astc-codec.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\astc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\dear-imgui.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\edtaa3.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\etc1.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\etc2.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\fcpp.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\glsl-optimizer.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\glslang.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\iqa.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\libsquish.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\meshoptimizer.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\nvtt.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\pvrtc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\spirv-cross.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\spirv-tools.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\tinyexr.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\webgpu.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bgfx.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bimg.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bx.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\examples.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\hybrid_rendering.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\shared.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\geometryc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\geometryv.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\shaderc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\texturec.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\texturev.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\util\ConfigureDebugging.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\generated\shader.cpp.in;D:\ComputerGraphics\Netease_Intern\HybridRendering\generated\vertexlayout.cpp.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeCCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeCXXCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeRCCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeSystem.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\cmake.verify_globs;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\astc-codec.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\astc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\dear-imgui.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\edtaa3.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\etc1.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\etc2.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\fcpp.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\glsl-optimizer.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\glslang.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\iqa.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\libsquish.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\meshoptimizer.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\nvtt.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\pvrtc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\spirv-cross.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\spirv-tools.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\tinyexr.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\webgpu.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bgfx.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bimg.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bx.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\examples.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\hybrid_rendering.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\shared.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\geometryc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\geometryv.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\shaderc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\texturec.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\texturev.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\util\ConfigureDebugging.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\generated\shader.cpp.in;D:\Programming\CG\NeteaseIntern\HybridRendering\generated\vertexlayout.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/ComputerGraphics/Netease_Intern/HybridRendering/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Programming/CG/NeteaseIntern/HybridRendering/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/ComputerGraphics/Netease_Intern/HybridRendering -BD:/ComputerGraphics/Netease_Intern/HybridRendering/build --check-stamp-file D:/ComputerGraphics/Netease_Intern/HybridRendering/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Programming/CG/NeteaseIntern/HybridRendering -BD:/Programming/CG/NeteaseIntern/HybridRendering/build --check-stamp-file D:/Programming/CG/NeteaseIntern/HybridRendering/build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -271,301 +271,301 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeCCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeCXXCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeRCCompiler.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\3.24.0-rc2\CMakeSystem.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\cmake.verify_globs;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\astc-codec.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\astc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\dear-imgui.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\edtaa3.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\etc1.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\etc2.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\fcpp.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\glsl-optimizer.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\glslang.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\iqa.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\libsquish.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\meshoptimizer.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\nvtt.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\pvrtc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\spirv-cross.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\spirv-tools.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\tinyexr.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\3rdparty\webgpu.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bgfx.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bimg.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\bx.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\examples.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\hybrid_rendering.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\shared.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\geometryc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\geometryv.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\shaderc.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\texturec.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\tools\texturev.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\cmake\util\ConfigureDebugging.cmake;D:\ComputerGraphics\Netease_Intern\HybridRendering\generated\shader.cpp.in;D:\ComputerGraphics\Netease_Intern\HybridRendering\generated\vertexlayout.cpp.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\ComputerGraphics\Netease_Intern\HybridRendering\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeCCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeCXXCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeRCCompiler.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\3.24.0-rc3\CMakeSystem.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\cmake.verify_globs;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\astc-codec.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\astc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\dear-imgui.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\edtaa3.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\etc1.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\etc2.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\fcpp.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\glsl-optimizer.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\glslang.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\iqa.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\libsquish.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\meshoptimizer.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\nvtt.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\pvrtc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\spirv-cross.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\spirv-tools.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\tinyexr.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\3rdparty\webgpu.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bgfx.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bimg.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\bx.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\examples.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\hybrid_rendering.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\shared.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\geometryc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\geometryv.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\shaderc.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\texturec.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\tools\texturev.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\cmake\util\ConfigureDebugging.cmake;D:\Programming\CG\NeteaseIntern\HybridRendering\generated\shader.cpp.in;D:\Programming\CG\NeteaseIntern\HybridRendering\generated\vertexlayout.cpp.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Programming\CG\NeteaseIntern\HybridRendering\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\OGLCompilersDLL\InitializeDll.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\OGLCompilersDLL\InitializeDll.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\GlslangToSpv.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\GlslangToSpv.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\InReadableOrder.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\InReadableOrder.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\Logger.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\Logger.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\SPVRemapper.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\SPVRemapper.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\SpvBuilder.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\SpvBuilder.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\SpvPostProcess.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\SpvPostProcess.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\SpvTools.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\SpvTools.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\disassemble.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\disassemble.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\doc.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\SPIRV\doc.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\GenericCodeGen\CodeGen.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\GenericCodeGen\CodeGen.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\GenericCodeGen\Link.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\GenericCodeGen\Link.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslAttributes.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslAttributes.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslGrammar.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslGrammar.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslOpMap.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslOpMap.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslParseHelper.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslParseHelper.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslParseables.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslParseables.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslScanContext.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslScanContext.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslTokenStream.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\HLSL\hlslTokenStream.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\Constant.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\Constant.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\InfoSink.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\InfoSink.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\Initialize.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\Initialize.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\IntermTraverse.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\IntermTraverse.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\Intermediate.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\Intermediate.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\ParseContextBase.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\ParseContextBase.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\ParseHelper.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\ParseHelper.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\PoolAlloc.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\PoolAlloc.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\RemoveTree.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\RemoveTree.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\Scan.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\Scan.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\ShaderLang.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\ShaderLang.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\SpirvIntrinsics.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\SpirvIntrinsics.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\SymbolTable.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\SymbolTable.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\Versions.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\Versions.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\attribute.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\attribute.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\glslang_tab.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\glslang_tab.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\intermOut.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\intermOut.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\iomapper.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\iomapper.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\limits.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\limits.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\linkValidate.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\linkValidate.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\parseConst.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\parseConst.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\preprocessor\Pp.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\preprocessor\Pp.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\preprocessor\PpAtom.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\preprocessor\PpAtom.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\preprocessor\PpContext.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\preprocessor\PpContext.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\preprocessor\PpScanner.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\preprocessor\PpScanner.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\preprocessor\PpTokens.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\preprocessor\PpTokens.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\propagateNoContraction.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\propagateNoContraction.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\reflection.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\MachineIndependent\reflection.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\hlsl\stub.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\hlsl\stub.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TurnOffAllWarnings</WarningLevel>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\glslang\glslang\OSDependent\Windows\ossource.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\glslang\glslang\OSDependent\Windows\ossource.cpp">
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TurnOffAllWarnings</WarningLevel>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TurnOffAllWarnings</WarningLevel>
@@ -573,8 +573,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\build\ZERO_CHECK.vcxproj">
-      <Project>{AC39F53C-8B5D-3F97-900B-C03EA62B8A29}</Project>
+    <ProjectReference Include="D:\Programming\CG\NeteaseIntern\HybridRendering\build\ZERO_CHECK.vcxproj">
+      <Project>{053FCF7F-BDEB-3A91-9B46-8E0AA19D8571}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

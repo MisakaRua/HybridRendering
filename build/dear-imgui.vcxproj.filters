@@ -1,57 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_demo.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_draw.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_tables.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_tables.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_widgets.cpp">
+    <ClCompile Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imconfig.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imconfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_internal.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_internal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_user.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_user.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_user.inl">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imgui_user.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imstb_rectpack.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imstb_rectpack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imstb_textedit.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imstb_textedit.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\bgfx\3rdparty\dear-imgui\imstb_truetype.h">
+    <ClInclude Include="D:\Programming\CG\NeteaseIntern\HybridRendering\bgfx\3rdparty\dear-imgui\imstb_truetype.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\ComputerGraphics\Netease_Intern\HybridRendering\CMakeLists.txt" />
+    <CustomBuild Include="D:\Programming\CG\NeteaseIntern\HybridRendering\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{31A21BFB-502C-35EB-8EA0-CDF031E8743C}</UniqueIdentifier>
+      <UniqueIdentifier>{08E9A3EC-344F-3ED8-BB4B-BB17B1849A8D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{2CAE8681-A1A3-3D92-9DE2-A080365DD67E}</UniqueIdentifier>
+      <UniqueIdentifier>{9CEF898C-1612-3038-BDBE-72448A6FEEF8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
