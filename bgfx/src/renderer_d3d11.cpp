@@ -898,11 +898,14 @@ namespace bgfx { namespace d3d11
 					hr = E_FAIL;
 					for (uint32_t ii = 0; ii < BX_COUNTOF(featureLevel) && FAILED(hr);)
 					{
-						DXGI_ADAPTER_DESC2 dxgi_desc{};
-						m_dxgi.m_adapter->GetDesc2(&dxgi_desc);
+						//DXGI_ADAPTER_DESC2 dxgi_desc{};
+						//m_dxgi.m_adapter->GetDesc2(&dxgi_desc);
 
-						hr = D3D11CreateDevice(m_dxgi.m_adapter
-							, m_dxgi.m_driverType
+						hr = D3D11CreateDevice(
+							//m_dxgi.m_adapter
+							nullptr
+							//, m_dxgi.m_driverType
+							, D3D_DRIVER_TYPE_HARDWARE
 							, NULL
 							, flags
 							, &featureLevel[ii]

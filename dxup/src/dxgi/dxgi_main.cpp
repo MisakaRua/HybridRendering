@@ -51,13 +51,14 @@ extern "C"
 
 	HRESULT __stdcall CreateDXGIFactory2(UINT Flags, REFIID riid, void **ppFactory)
 	{
-		IDXGIFactory5* pWrappedFactory = nullptr;
-		//HRESULT result = DXGIWrapper::Get().CreateDXGIFactory1Function(__uuidof(IDXGIFactory1), (void**)&pWrappedFactory);
-		HRESULT result = DXGIWrapper::Get().CreateDXGIFactory1Function(riid, (void**)&pWrappedFactory);
+		void* pWrappedFactory = nullptr;
+		static const GUID IID_IDXGIFactory = { 0x7b7166ec, 0x21c7, 0x44ae, { 0xb2, 0x1a, 0xc9, 0xae, 0x32, 0x1a, 0xe3, 0x69 } };
+		HRESULT result = DXGIWrapper::Get().CreateDXGIFactory1Function(IID_IDXGIFactory, &pWrappedFactory);
+		//HRESULT result = DXGIWrapper::Get().CreateDXGIFactory1Function(riid, (void**)&pWrappedFactory);
 
 		if (pWrappedFactory)
 		{
-			DXGIFactory* dxupFactory = new DXGIFactory(pWrappedFactory);
+			DXGIFactory* dxupFactory = new DXGIFactory((IDXGIFactory5*)pWrappedFactory);
 			if (ppFactory)
 				*ppFactory = dxupFactory;
 		}

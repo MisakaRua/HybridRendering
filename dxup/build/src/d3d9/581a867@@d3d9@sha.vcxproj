@@ -1,184 +1,184 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
-	<ItemGroup Label="ProjectConfigurations">
-		<ProjectConfiguration Include="debug|x64">
-			<Configuration>debug</Configuration>
-			<Platform>x64</Platform>
-		</ProjectConfiguration>
-	</ItemGroup>
-	<PropertyGroup Label="Globals">
-		<ProjectGuid>{B808FB3E-1F51-48C9-BB07-938C57401DD3}</ProjectGuid>
-		<Keyword>x64Proj</Keyword>
-		<RootNamespace>d3d9</RootNamespace>
-		<Platform>x64</Platform>
-		<ProjectName>d3d9</ProjectName>
-		<WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
-		<UseMultiToolTask>true</UseMultiToolTask>
-	</PropertyGroup>
-	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
-	<PropertyGroup Label="Configuration">
-		<ConfigurationType>DynamicLibrary</ConfigurationType>
-		<CharacterSet>MultiByte</CharacterSet>
-		<UseOfMfc>false</UseOfMfc>
-		<PlatformToolset>v141</PlatformToolset>
-		<WholeProgramOptimization>false</WholeProgramOptimization>
-		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
-		<UseDebugLibraries>true</UseDebugLibraries>
-	</PropertyGroup>
-	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
-	<PropertyGroup>
-		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-		<OutDir>.\</OutDir>
-		<IntDir>581a867@@d3d9@sha\</IntDir>
-		<TargetName>d3d9</TargetName>
-		<TargetExt>.dll</TargetExt>
-	</PropertyGroup>
-	<ItemDefinitionGroup>
-		<ClCompile>
-			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-			<ExceptionHandling>Sync</ExceptionHandling>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<FunctionLevelLinking>true</FunctionLevelLinking>
-			<WarningLevel>Level2</WarningLevel>
-			<Optimization>Disabled</Optimization>
-			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-			<LanguageStandard>stdcpplatest</LanguageStandard>
-		</ClCompile>
-		<ResourceCompile>
-			<PreprocessorDefinitions/>
-		</ResourceCompile>
-		<Link>
-			<GenerateDebugInformation>DebugFull</GenerateDebugInformation>
-			<AdditionalDependencies>d3d11.lib;dxgi.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\src\util\libutil.a;..\..\src\dx9asm\libdx9asm.a;%(AdditionalDependencies)</AdditionalDependencies>
-			<OutputFile>$(OutDir)d3d9.dll</OutputFile>
-			<SubSystem>Windows</SubSystem>
-			<ImportLibrary>d3d9.lib</ImportLibrary>
-			<ModuleDefinitionFile>..\..\..\src\d3d9\d3d9.def</ModuleDefinitionFile>
-			<ProgramDataBaseFileName>$(OutDir)d3d9.pdb</ProgramDataBaseFileName>
-			<TargetMachine>MachineX64</TargetMachine>
-			<SuppressStartupBanner>true</SuppressStartupBanner>
-		</Link>
-	</ItemDefinitionGroup>
-	<ItemGroup>
-		<None Include="..\..\..\src\d3d9\meson.build"/>
-	</ItemGroup>
-	<ItemGroup>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_device.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_device.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_interface.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_interface.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_main.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_main.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_surface.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_surface.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_volume.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_volume.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_swapchain.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_swapchain.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_util.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_util.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_format.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_format.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_d3d11_resource.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_d3d11_resource.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_d3d11_resource_mapping.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_d3d11_resource_mapping.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_query.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_query.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_state_cache.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_state_cache.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_state.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_state.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_renderer.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_renderer.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d11_dynamic_buffer.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d11_dynamic_buffer.cpp.obj</ObjectFileName>
-		</CLCompile>
-		<CLCompile Include="..\..\..\src\d3d9\d3d9_texture.cpp">
-			<AdditionalOptions>&quot;/EHsc&quot; &quot;/std:c++latest&quot; %(AdditionalOptions)</AdditionalOptions>
-			<PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-			<AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-			<ObjectFileName>$(IntDir)d3d9_texture.cpp.obj</ObjectFileName>
-		</CLCompile>
-	</ItemGroup>
-	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
-	<ItemGroup>
-		<ProjectReference Include="D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\REGEN.vcxproj">
-			<Project>{49E492C3-6E5A-46E1-B410-0155CA8EF660}</Project>
-			<LinkLibraryDependencies>false</LinkLibraryDependencies>
-		</ProjectReference>
-	</ItemGroup>
-	<ItemGroup>
-		<ProjectReference Include="..\util\719bc35@@util@sta.vcxproj">
-			<Project>{8CC453FA-6C7E-4804-A0E1-6F061717D326}</Project>
-			<LinkLibraryDependencies>false</LinkLibraryDependencies>
-		</ProjectReference>
-	</ItemGroup>
-	<ItemGroup>
-		<ProjectReference Include="..\dx9asm\fda8aad@@dx9asm@sta.vcxproj">
-			<Project>{439AB4AC-641B-40BD-B448-27A51C2F4B35}</Project>
-			<LinkLibraryDependencies>false</LinkLibraryDependencies>
-		</ProjectReference>
-	</ItemGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B808FB3E-1F51-48C9-BB07-938C57401DD3}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+    <RootNamespace>d3d9</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>d3d9</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <UseMultiToolTask>true</UseMultiToolTask>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>.\</OutDir>
+    <IntDir>581a867@@d3d9@sha\</IntDir>
+    <TargetName>d3d9</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level2</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions />
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;shlwapi.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\src\util\libutil.a;..\..\src\dx9asm\libdx9asm.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)d3d9.dll</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>d3d9.lib</ImportLibrary>
+      <ModuleDefinitionFile>..\..\..\src\d3d9\d3d9.def</ModuleDefinitionFile>
+      <ProgramDataBaseFileName>$(OutDir)d3d9.pdb</ProgramDataBaseFileName>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\d3d9\meson.build" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_device.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_device.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_interface.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_interface.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_main.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_main.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_surface.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_surface.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_volume.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_volume.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_swapchain.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_swapchain.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_util.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_util.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_format.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_format.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_d3d11_resource.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_d3d11_resource.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_d3d11_resource_mapping.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_d3d11_resource_mapping.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_query.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_query.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_state_cache.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_state_cache.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_state.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_state.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_renderer.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_renderer.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d11_dynamic_buffer.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d11_dynamic_buffer.cpp.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\..\src\d3d9\d3d9_texture.cpp">
+      <AdditionalOptions>"/EHsc" "/std:c++latest" %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>581a867@@d3d9@sha;.;..\..\..\src\d3d9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)d3d9_texture.cpp.obj</ObjectFileName>
+    </CLCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="D:\Programming\CG\NeteaseIntern\HybridRendering\dxup\build\REGEN.vcxproj">
+      <Project>{49E492C3-6E5A-46E1-B410-0155CA8EF660}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\util\719bc35@@util@sta.vcxproj">
+      <Project>{8CC453FA-6C7E-4804-A0E1-6F061717D326}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dx9asm\fda8aad@@dx9asm@sta.vcxproj">
+      <Project>{439AB4AC-641B-40BD-B448-27A51C2F4B35}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

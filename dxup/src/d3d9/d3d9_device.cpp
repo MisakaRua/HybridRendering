@@ -60,11 +60,11 @@ namespace dxup {
 	  DXGI_ADAPTER_DESC2 dxgi_desc{};
 	  (*dxgiAdapter)->GetDesc2(&dxgi_desc);
 
-	  UINT Flags = 0 |
-		  D3D11_CREATE_DEVICE_SINGLETHREADED |
-		  //D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT |
-		  D3D11_CREATE_DEVICE_BGRA_SUPPORT |
-		  (config::getBool(config::Debug) ? D3D11_CREATE_DEVICE_DEBUG : 0)
+	  UINT Flags = 0
+		  //| D3D11_CREATE_DEVICE_SINGLETHREADED
+		  //| D3D11_CREATE_DEVICE_BGRA_SUPPORT
+		  //| D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT
+		  | (config::getBool(config::Debug) ? D3D11_CREATE_DEVICE_DEBUG : 0)
 		  ; // Why isn't this a default?! ~ Josh
 
 	  //if (config::getBool(config::Debug))
@@ -74,7 +74,7 @@ namespace dxup {
 	  {
 		  //D3D_FEATURE_LEVEL_12_1,
 		  //D3D_FEATURE_LEVEL_12_0,
-		  //D3D_FEATURE_LEVEL_11_1,
+		  D3D_FEATURE_LEVEL_11_1,
 		  D3D_FEATURE_LEVEL_11_0,
 		  D3D_FEATURE_LEVEL_10_1,
 		  D3D_FEATURE_LEVEL_10_0,
@@ -455,7 +455,10 @@ namespace dxup {
       return E_POINTER;
 
     if (riid == __uuidof(IDirect3DDevice9Ex) || riid == __uuidof(IDirect3DDevice9) || riid == __uuidof(IUnknown))
+	{
       *ppv = ref(this);
+	  return S_OK;
+	}
 
 	/* 2022-7-10
 	 * The program is set to return E_NO_INTERFACE no matter what kind of riid, and I think this is a bug.

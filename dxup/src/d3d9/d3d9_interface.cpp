@@ -34,8 +34,9 @@ namespace dxup {
     if (pIdentifier == nullptr)
       return log::d3derr(D3DERR_INVALIDCALL, "GetAdapterIdentifier: pIdentifier was nullptr.");
 
-	//bool fake = config::getBool(config::UseFakes);
-	bool fake = false;
+	bool fake = false
+		//| config::getBool(config::UseFakes)
+		;
 
     cacheAdapters();
 
