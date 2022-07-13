@@ -18,12 +18,13 @@
 #include "d3d9_renderer.h"
 #include <d3d11_4.h>
 #include <float.h>
+#include <cassert>
 
 namespace dxup {
 
   Direct3DDevice9Ex::Direct3DDevice9Ex(
     UINT adapterNum,
-    IDXGIAdapter1* adapter,
+    IDXGIAdapter3* adapter,
     HWND window,
     ID3D11Device1* device,
     ID3D11DeviceContext1* context,
@@ -50,57 +51,80 @@ namespace dxup {
       setupFPUFlags();
   }
 
-  HRESULT Direct3DDevice9Ex::CreateD3D11Device(UINT adapter, Direct3D9Ex* parent, ID3D11Device1** device, ID3D11DeviceContext1** context, IDXGIDevice1** dxgiDevice, IDXGIAdapter1** dxgiAdapter) {
-    if (adapter >= parent->getAdapterList().size())
-      return log::d3derr(D3DERR_INVALIDCALL, "CreateD3D11Device: adapter out of bounds (adapter = %d, range: 0-%d).", adapter, parent->getAdapterList().size());
+  HRESULT Direct3DDevice9Ex::CreateD3D11Device(UINT adapter, Direct3D9Ex* parent, ID3D11Device1** device, ID3D11DeviceContext1** context, IDXGIDevice1** dxgiDevice, IDXGIAdapter3** dxgiAdapter)
+  {
+	  if (adapter >= parent->getAdapterList().size())
+		  return log::d3derr(D3DERR_INVALIDCALL, "CreateD3D11Device: adapter out of bounds (adapter = %d, range: 0-%d).", adapter, parent->getAdapterList().size());
 
-    *dxgiAdapter = ref(parent->getAdapterList()[adapter].ptr());
+	  *dxgiAdapter = ref(parent->getAdapterList()[adapter].ptr());
+	  DXGI_ADAPTER_DESC2 dxgi_desc{};
+	  (*dxgiAdapter)->GetDesc2(&dxgi_desc);
 
-    UINT Flags = D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT | D3D11_CREATE_DEVICE_BGRA_SUPPORT; // Why isn't this a default?! ~ Josh
+	  UINT Flags = 0
+		  | D3D11_CREATE_DEVICE_SINGLETHREADED
+		  //| D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT
+		  | D3D11_CREATE_DEVICE_BGRA_SUPPORT
+		  | (config::getBool(config::Debug) ? D3D11_CREATE_DEVICE_DEBUG : 0)
+		  ; // Why isn't this a default?! ~ Josh
 
-    if (config::getBool(config::Debug))
-      Flags |= D3D11_CREATE_DEVICE_DEBUG;
+	  //if (config::getBool(config::Debug))
+	  //  Flags |= D3D11_CREATE_DEVICE_DEBUG;
 
-    std::array<D3D_FEATURE_LEVEL, 4> featureLevels =
-    {
-        D3D_FEATURE_LEVEL_11_1,
-        D3D_FEATURE_LEVEL_11_0,
-        D3D_FEATURE_LEVEL_10_1,
-        D3D_FEATURE_LEVEL_10_0,
-    };
-    D3D_FEATURE_LEVEL level = D3D_FEATURE_LEVEL_11_1;
+	  D3D_FEATURE_LEVEL featureLevels[] =
+	  {
+		//D3D_FEATURE_LEVEL_12_1,
+		//D3D_FEATURE_LEVEL_12_0,
+		//D3D_FEATURE_LEVEL_11_1,
+		D3D_FEATURE_LEVEL_11_0,
+		D3D_FEATURE_LEVEL_10_1,
+		D3D_FEATURE_LEVEL_10_0,
+	  };
+	  //D3D_FEATURE_LEVEL level = D3D_FEATURE_LEVEL_11_1;
+	  D3D_FEATURE_LEVEL level{};
 
-    Com<ID3D11Device> initialDevice;
-    Com<ID3D11DeviceContext> initialContext;
+	  Com<ID3D11Device> initialDevice;
+	  Com<ID3D11DeviceContext> initialContext;
 
-    HRESULT result = D3D11CreateDevice(
-      *dxgiAdapter,
-      D3D_DRIVER_TYPE_UNKNOWN,
-      nullptr,
-      Flags,
-      featureLevels.data(),
-      featureLevels.size(),
-      D3D11_SDK_VERSION,
-      &initialDevice,
-      &level,
-      &initialContext
-    );
+	  HRESULT result = E_FAIL;
+	  for (uint32_t ii = 0; ii < std::size(featureLevels) && FAILED(result);)
+	  {
+		  result = D3D11CreateDevice(*dxgiAdapter
+			  , D3D_DRIVER_TYPE_UNKNOWN
+			  , nullptr
+			  , Flags
+			  , &featureLevels[ii]
+              , std::size(featureLevels) - ii
+              , D3D11_SDK_VERSION
+              , &initialDevice
+              , &level
+              , &initialContext
+              );
 
-    if (FAILED(result))
-      return log::d3derr(D3DERR_DEVICELOST, "Device creation: failed to create D3D11 device.");
+		  if (FAILED(result) && (0 != (Flags & D3D11_CREATE_DEVICE_DEBUG)))
+		  {
+			  Flags &= ~D3D11_CREATE_DEVICE_DEBUG;
+			  continue;
+		  }
 
-    result = initialDevice->QueryInterface(__uuidof(ID3D11Device1), (void**)device);
-    HRESULT contextResult = initialContext->QueryInterface(__uuidof(ID3D11DeviceContext1), (void**)context);
+		  Flags |= (config::getBool(config::Debug) ? D3D11_CREATE_DEVICE_DEBUG : 0);
+		  ++ii;
+	  }
 
-    if (FAILED(result) || FAILED(contextResult))
-      return log::d3derr(D3DERR_DEVICELOST, "Device creation: unable to upgrade D3D11 device to D3D11_1 device.");
+	  if (FAILED(result))
+		  return log::d3derr(D3DERR_DEVICELOST, "Device creation: failed to create D3D11 device.");
 
-    result = initialDevice->QueryInterface(__uuidof(IDXGIDevice1), (void**)dxgiDevice);
+	  result = initialDevice->QueryInterface(__uuidof(ID3D11Device1), (void**)device);
+	  HRESULT contextResult = initialContext->QueryInterface(__uuidof(ID3D11DeviceContext1), (void**)context);
 
-    if (FAILED(result))
-      return log::d3derr(D3DERR_DEVICELOST, "Device creation: couldn't obtain IDXGIDevice1 from D3D11 device.");
+	  if (FAILED(result) || FAILED(contextResult))
+		  return log::d3derr(D3DERR_DEVICELOST, "Device creation: unable to upgrade D3D11 device to D3D11_1 device.");
 
-    return D3D_OK;
+	  result = initialDevice->QueryInterface(__uuidof(IDXGIDevice1), (void**)dxgiDevice);
+
+	  if (FAILED(result))
+		  return log::d3derr(D3DERR_DEVICELOST, "Device creation: couldn't obtain IDXGIDevice1 from D3D11 device.");
+
+	  return D3D_OK;
   }
 
   HRESULT Direct3DDevice9Ex::Create(
@@ -123,7 +147,7 @@ namespace dxup {
 
     Com<ID3D11Device1> device;
     Com<ID3D11DeviceContext1> context;
-    Com<IDXGIAdapter1> dxgiAdapter;
+    Com<IDXGIAdapter3> dxgiAdapter;
     Com<IDXGIDevice1> dxgiDevice;
 
     HRESULT result = CreateD3D11Device(adapter, parent, &device, &context, &dxgiDevice, &dxgiAdapter);

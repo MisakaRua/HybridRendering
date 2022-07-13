@@ -118,7 +118,21 @@
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo "Copying shader to build folder."
 if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Programming/CG/NeteaseIntern/HybridRendering/hybrid_rendering/shaders/bin/dx11 D:/Programming/CG/NeteaseIntern/HybridRendering/build/shaders/dx11
+if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Programming/CG/NeteaseIntern/HybridRendering/hybrid_rendering/shaders/bin/dx9 D:/Programming/CG/NeteaseIntern/HybridRendering/build/shaders/dx9
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d9/d3d9.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d9/d3d9.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d10_1/d3d10_1.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d10_1/d3d10_1.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/dxgi/dxgi.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/dxgi/dxgi.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -178,7 +192,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo "Copying shader to build folder."
 if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Programming/CG/NeteaseIntern/HybridRendering/hybrid_rendering/shaders/bin/dx11 D:/Programming/CG/NeteaseIntern/HybridRendering/build/shaders/dx11
+if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Programming/CG/NeteaseIntern/HybridRendering/hybrid_rendering/shaders/bin/dx9 D:/Programming/CG/NeteaseIntern/HybridRendering/build/shaders/dx9
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d9/d3d9.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d9/d3d9.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d10_1/d3d10_1.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d10_1/d3d10_1.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/dxgi/dxgi.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/dxgi/dxgi.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -238,7 +266,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo "Copying shader to build folder."
 if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Programming/CG/NeteaseIntern/HybridRendering/hybrid_rendering/shaders/bin/dx11 D:/Programming/CG/NeteaseIntern/HybridRendering/build/shaders/dx11
+if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Programming/CG/NeteaseIntern/HybridRendering/hybrid_rendering/shaders/bin/dx9 D:/Programming/CG/NeteaseIntern/HybridRendering/build/shaders/dx9
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d9/d3d9.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d9/d3d9.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d10_1/d3d10_1.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d10_1/d3d10_1.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/dxgi/dxgi.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/dxgi/dxgi.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -297,7 +339,21 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E echo "Copying shader to build folder."
 if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Programming/CG/NeteaseIntern/HybridRendering/hybrid_rendering/shaders/bin/dx11 D:/Programming/CG/NeteaseIntern/HybridRendering/build/shaders/dx11
+if %errorlevel% neq 0 goto :cmEnd
 "C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/Programming/CG/NeteaseIntern/HybridRendering/hybrid_rendering/shaders/bin/dx9 D:/Programming/CG/NeteaseIntern/HybridRendering/build/shaders/dx9
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d9/d3d9.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d9/d3d9.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d10_1/d3d10_1.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/d3d10_1/d3d10_1.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/dxgi/dxgi.dll D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Programming/CG/NeteaseIntern/HybridRendering/dxup/build/src/dxgi/dxgi.pdb D:/Programming/CG/NeteaseIntern/HybridRendering/build/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone

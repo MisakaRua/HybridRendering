@@ -34,7 +34,8 @@ namespace dxup {
     if (pIdentifier == nullptr)
       return log::d3derr(D3DERR_INVALIDCALL, "GetAdapterIdentifier: pIdentifier was nullptr.");
 
-    bool fake = config::getBool(config::UseFakes);
+	//bool fake = config::getBool(config::UseFakes);
+	bool fake = false;
 
     cacheAdapters();
 
@@ -927,14 +928,17 @@ namespace dxup {
       return;
 
     UINT i = 0;
-    Com<IDXGIAdapter1> adapter;
+    Com<IDXGIAdapter3> adapter;
 
-    while (!FAILED(m_dxgiFactory->EnumAdapters1(i, &adapter))) {
-      Com<IDXGIOutput> output;
+	//while (!FAILED(m_dxgiFactory->EnumAdapters1(i, reinterpret_cast<IDXGIAdapter1**>(&adapter)))) {
+	while (DXGI_ERROR_NOT_FOUND != m_dxgiFactory->EnumAdapters(i, reinterpret_cast<IDXGIAdapter**>(&adapter))) {		
+	  Com<IDXGIOutput> output;
 
       // Only return adapters with outputs.
-      if (!FAILED(adapter->EnumOutputs(0, &output)))
-        m_adapters.emplace_back(adapter.ptr());
+	  if (!FAILED(adapter->EnumOutputs(0, &output)))
+	  {
+		m_adapters.emplace_back(adapter.ptr());
+	  }
 
       adapter = nullptr;
 

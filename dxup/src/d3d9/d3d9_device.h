@@ -192,13 +192,13 @@ namespace dxup {
 
   private:
 
-    static HRESULT CreateD3D11Device(UINT adpater, Direct3D9Ex* parent, ID3D11Device1** device, ID3D11DeviceContext1** context, IDXGIDevice1** dxgiDevice, IDXGIAdapter1** adapter);
+    static HRESULT CreateD3D11Device(UINT adpater, Direct3D9Ex* parent, ID3D11Device1** device, ID3D11DeviceContext1** context, IDXGIDevice1** dxgiDevice, IDXGIAdapter3** adapter);
     static void SetupD3D11Debug(ID3D11Device* device);
     void setupFPUFlags();
 
     Direct3DDevice9Ex(
       UINT adapterNum,
-      IDXGIAdapter1* adapter,
+      IDXGIAdapter3* adapter,
       HWND window,
       ID3D11Device1* device,
       ID3D11DeviceContext1* context,
@@ -219,7 +219,7 @@ namespace dxup {
     Com<ID3D11Device1> m_device;
 
     UINT m_adapterNum;
-    Com<IDXGIAdapter1> m_adapter;
+    Com<IDXGIAdapter3> m_adapter;
     HWND m_window;
 
     Com<ID3D11DeviceContext1> m_context;

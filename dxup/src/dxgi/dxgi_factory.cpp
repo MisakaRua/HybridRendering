@@ -48,8 +48,13 @@ namespace dxup
 		IDXGISwapChain* originalSwapchain = nullptr;
 
 		auto* dxupDevice = static_cast<D3D10Device*>(pDevice);
+		//auto* dxupDevice = static_cast<D3D9DeviceUnknown*>(pDevice);
 
-		HRESULT result = this->m_base->CreateSwapChain(dxupDevice->GetD3D11Interface(), pDesc, &originalSwapchain);
+		HRESULT result = this->m_base->CreateSwapChain(
+			dxupDevice->GetD3D11Interface(),
+			pDesc,
+			&originalSwapchain
+		);
 
 		if (originalSwapchain)
 		{

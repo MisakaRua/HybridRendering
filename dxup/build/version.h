@@ -1,3 +1,3 @@
 #pragma once
 
-#define DXUP_VERSION "4818e7a"
+#define DXUP_VERSION "a2b081f+"
