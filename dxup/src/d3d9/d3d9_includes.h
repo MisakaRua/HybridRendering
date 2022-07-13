@@ -5,6 +5,7 @@
 //#include <d3d11_1.h>
 #include <d3d11_4.h>
 #include <dxgi.h>
+#include <dxgi1_6.h>
 
 // d3d9
 

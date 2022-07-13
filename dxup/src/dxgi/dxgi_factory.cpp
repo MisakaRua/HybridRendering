@@ -4,7 +4,7 @@
 
 namespace dxup
 {
-	DXGIFactory::DXGIFactory(IDXGIFactory1* base)
+	DXGIFactory::DXGIFactory(IDXGIFactory5* base)
 	{
 		this->m_base = base;
 	}

@@ -51,7 +51,7 @@ extern "C"
 
 	HRESULT __stdcall CreateDXGIFactory2(UINT Flags, REFIID riid, void **ppFactory)
 	{
-		IDXGIFactory2* pWrappedFactory = nullptr;
+		IDXGIFactory5* pWrappedFactory = nullptr;
 		//HRESULT result = DXGIWrapper::Get().CreateDXGIFactory1Function(__uuidof(IDXGIFactory1), (void**)&pWrappedFactory);
 		HRESULT result = DXGIWrapper::Get().CreateDXGIFactory1Function(riid, (void**)&pWrappedFactory);
 

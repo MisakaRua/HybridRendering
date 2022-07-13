@@ -60,11 +60,11 @@ namespace dxup {
 	  DXGI_ADAPTER_DESC2 dxgi_desc{};
 	  (*dxgiAdapter)->GetDesc2(&dxgi_desc);
 
-	  UINT Flags = 0
-		  | D3D11_CREATE_DEVICE_SINGLETHREADED
-		  //| D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT
-		  | D3D11_CREATE_DEVICE_BGRA_SUPPORT
-		  | (config::getBool(config::Debug) ? D3D11_CREATE_DEVICE_DEBUG : 0)
+	  UINT Flags = 0 |
+		  D3D11_CREATE_DEVICE_SINGLETHREADED |
+		  //D3D11_CREATE_DEVICE_DISABLE_GPU_TIMEOUT |
+		  D3D11_CREATE_DEVICE_BGRA_SUPPORT |
+		  (config::getBool(config::Debug) ? D3D11_CREATE_DEVICE_DEBUG : 0)
 		  ; // Why isn't this a default?! ~ Josh
 
 	  //if (config::getBool(config::Debug))
@@ -72,12 +72,12 @@ namespace dxup {
 
 	  D3D_FEATURE_LEVEL featureLevels[] =
 	  {
-		//D3D_FEATURE_LEVEL_12_1,
-		//D3D_FEATURE_LEVEL_12_0,
-		//D3D_FEATURE_LEVEL_11_1,
-		D3D_FEATURE_LEVEL_11_0,
-		D3D_FEATURE_LEVEL_10_1,
-		D3D_FEATURE_LEVEL_10_0,
+		  //D3D_FEATURE_LEVEL_12_1,
+		  //D3D_FEATURE_LEVEL_12_0,
+		  //D3D_FEATURE_LEVEL_11_1,
+		  D3D_FEATURE_LEVEL_11_0,
+		  D3D_FEATURE_LEVEL_10_1,
+		  D3D_FEATURE_LEVEL_10_0,
 	  };
 	  //D3D_FEATURE_LEVEL level = D3D_FEATURE_LEVEL_11_1;
 	  D3D_FEATURE_LEVEL level{};
@@ -88,17 +88,18 @@ namespace dxup {
 	  HRESULT result = E_FAIL;
 	  for (uint32_t ii = 0; ii < std::size(featureLevels) && FAILED(result);)
 	  {
-		  result = D3D11CreateDevice(*dxgiAdapter
-			  , D3D_DRIVER_TYPE_UNKNOWN
-			  , nullptr
-			  , Flags
-			  , &featureLevels[ii]
-              , std::size(featureLevels) - ii
-              , D3D11_SDK_VERSION
-              , &initialDevice
-              , &level
-              , &initialContext
-              );
+		  result = D3D11CreateDevice(
+			  *dxgiAdapter,
+			  D3D_DRIVER_TYPE_UNKNOWN,
+			  nullptr,
+			  Flags,
+			  &featureLevels[ii],
+			  std::size(featureLevels) - ii,
+			  D3D11_SDK_VERSION,
+			  &initialDevice,
+			  &level,
+			  &initialContext
+		  );
 
 		  if (FAILED(result) && (0 != (Flags & D3D11_CREATE_DEVICE_DEBUG)))
 		  {

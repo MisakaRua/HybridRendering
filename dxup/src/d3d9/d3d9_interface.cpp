@@ -931,7 +931,7 @@ namespace dxup {
     Com<IDXGIAdapter3> adapter;
 
 	//while (!FAILED(m_dxgiFactory->EnumAdapters1(i, reinterpret_cast<IDXGIAdapter1**>(&adapter)))) {
-	while (DXGI_ERROR_NOT_FOUND != m_dxgiFactory->EnumAdapters(i, reinterpret_cast<IDXGIAdapter**>(&adapter))) {		
+	while (DXGI_ERROR_NOT_FOUND != m_dxgiFactory->EnumAdapters1(i, reinterpret_cast<IDXGIAdapter1**>(&adapter))) {		
 	  Com<IDXGIOutput> output;
 
       // Only return adapters with outputs.
@@ -946,7 +946,7 @@ namespace dxup {
     }
   }
 
-  IDXGIFactory1* Direct3D9Ex::GetDXGIFactory() {
+  IDXGIFactory5* Direct3D9Ex::GetDXGIFactory() {
     return m_dxgiFactory.ptr();
   }
 

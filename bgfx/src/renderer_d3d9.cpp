@@ -623,7 +623,7 @@ namespace bgfx { namespace d3d9
 							, &m_params
 							, NULL
 							, &m_deviceEx
-							) );
+						    ) );
 
 						m_device = m_deviceEx;
 					}

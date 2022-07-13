@@ -8,8 +8,8 @@ namespace dxup {
     if (d3d9 == nullptr)
       return E_INVALIDARG;
 
-    Com<IDXGIFactory1> dxgiFactory;
-    HRESULT result = CreateDXGIFactory1(__uuidof(IDXGIFactory1), (void**)&dxgiFactory);
+    Com<IDXGIFactory5> dxgiFactory;
+    HRESULT result = CreateDXGIFactory1(__uuidof(IDXGIFactory5), (void**)&dxgiFactory);
 
     if (FAILED(result))
         return result;

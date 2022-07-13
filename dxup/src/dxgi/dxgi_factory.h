@@ -1,6 +1,8 @@
 #pragma once
 
-#include <dxgi1_2.h>
+//#include <dxgi1_2.h>
+//#include <dxgi1_4.h>
+#include <dxgi1_6.h>
 
 #ifndef NO_MAP
 #define NO_MAP
@@ -10,10 +12,10 @@
 
 namespace dxup
 {
-	class DXGIFactory : public D3D10Base<IDXGIFactory1, IDXGIFactory1>
+	class DXGIFactory : public D3D10Base<IDXGIFactory1, IDXGIFactory5>
 	{
 	public:
-		DXGIFactory(IDXGIFactory1* base);
+		DXGIFactory(IDXGIFactory5* base);
 
 		HRESULT STDMETHODCALLTYPE QueryInterface(
 			REFIID                riid,

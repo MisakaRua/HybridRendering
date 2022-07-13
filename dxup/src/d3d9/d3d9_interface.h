@@ -7,7 +7,7 @@ namespace dxup {
 	class Direct3D9Ex final : public Unknown<IDirect3D9Ex>
 	{
 	public:
-		Direct3D9Ex(IDXGIFactory1* dxgiFactory)
+		Direct3D9Ex(IDXGIFactory5* dxgiFactory)
 			: m_dxgiFactory{ dxgiFactory }
 		{}
 
@@ -37,7 +37,7 @@ namespace dxup {
 
 		// dxup
 
-		IDXGIFactory1* GetDXGIFactory();
+		IDXGIFactory5* GetDXGIFactory();
 		HRESULT EnumAdapterModeFormatEx(UINT Adapter, D3DFORMAT Format, const D3DDISPLAYMODEFILTER* pFilter, UINT Mode, D3DDISPLAYMODEEX* pMode);
 
 
@@ -53,7 +53,7 @@ namespace dxup {
 		D3DFORMAT m_displayModeFormats;
 		std::vector<DXGI_MODE_DESC> m_displayModes;
 		std::vector<Com<IDXGIAdapter3>> m_adapters;
-		Com<IDXGIFactory1> m_dxgiFactory;
+		Com<IDXGIFactory5> m_dxgiFactory;
 	};
 
 }
