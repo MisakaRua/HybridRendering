@@ -90,8 +90,10 @@ namespace dxup {
 		for (uint32_t ii = 0; ii < std::size(featureLevels) && FAILED(result);)
 		{
 			result = D3D11CreateDevice(
-				*dxgiAdapter,
-				D3D_DRIVER_TYPE_UNKNOWN,
+				//*dxgiAdapter,
+				nullptr,
+				//D3D_DRIVER_TYPE_UNKNOWN,
+				D3D_DRIVER_TYPE_HARDWARE,
 				nullptr,
 				Flags,
 				&featureLevels[ii],

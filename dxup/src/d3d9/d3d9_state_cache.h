@@ -7,53 +7,53 @@
 
 namespace dxup {
 
-  struct D3D11StateDescHash {
-    size_t operator () (const D3D11_SAMPLER_DESC& desc) const;
-    size_t operator () (const D3D11_RENDER_TARGET_BLEND_DESC1& desc) const;
-    size_t operator () (const D3D11_BLEND_DESC1& desc) const;
-    size_t operator () (const D3D11_RASTERIZER_DESC1& desc) const;
-    size_t operator () (const D3D11_DEPTH_STENCILOP_DESC& desc) const;
-    size_t operator () (const D3D11_DEPTH_STENCIL_DESC& desc) const;
-  };
+	struct D3D11StateDescHash {
+		size_t operator () (const D3D11_SAMPLER_DESC& desc) const;
+		size_t operator () (const D3D11_RENDER_TARGET_BLEND_DESC1& desc) const;
+		size_t operator () (const D3D11_BLEND_DESC1& desc) const;
+		size_t operator () (const D3D11_RASTERIZER_DESC1& desc) const;
+		size_t operator () (const D3D11_DEPTH_STENCILOP_DESC& desc) const;
+		size_t operator () (const D3D11_DEPTH_STENCIL_DESC& desc) const;
+	};
 
-  struct D3D11StateDescEqual {
-    bool operator () (const D3D11_SAMPLER_DESC& a, const D3D11_SAMPLER_DESC& b) const;
-    bool operator () (const D3D11_RENDER_TARGET_BLEND_DESC1& a, const D3D11_RENDER_TARGET_BLEND_DESC1& b) const;
-    bool operator () (const D3D11_BLEND_DESC1& a, const D3D11_BLEND_DESC1& b) const;
-    bool operator () (const D3D11_RASTERIZER_DESC1& a, const D3D11_RASTERIZER_DESC1& b) const;
-    bool operator () (const D3D11_DEPTH_STENCILOP_DESC& a, const D3D11_DEPTH_STENCILOP_DESC& b) const;
-    bool operator () (const D3D11_DEPTH_STENCIL_DESC& a, const D3D11_DEPTH_STENCIL_DESC& b) const;
-  };
+	struct D3D11StateDescEqual {
+		bool operator () (const D3D11_SAMPLER_DESC& a, const D3D11_SAMPLER_DESC& b) const;
+		bool operator () (const D3D11_RENDER_TARGET_BLEND_DESC1& a, const D3D11_RENDER_TARGET_BLEND_DESC1& b) const;
+		bool operator () (const D3D11_BLEND_DESC1& a, const D3D11_BLEND_DESC1& b) const;
+		bool operator () (const D3D11_RASTERIZER_DESC1& a, const D3D11_RASTERIZER_DESC1& b) const;
+		bool operator () (const D3D11_DEPTH_STENCILOP_DESC& a, const D3D11_DEPTH_STENCILOP_DESC& b) const;
+		bool operator () (const D3D11_DEPTH_STENCIL_DESC& a, const D3D11_DEPTH_STENCIL_DESC& b) const;
+	};
 
-  template <typename Desc, typename Object>
-  class StateCache {
+	template <typename Desc, typename Object>
+	class StateCache {
 
-  public:
+	public:
 
-    using StatePair = std::pair<size_t, Com<Object>>;
-    
-    size_t hash(const Desc& desc) {
-      static D3D11StateDescHash hasher;
-      return hasher.operator()(desc);
-    }
+		using StatePair = std::pair<size_t, Com<Object>>;
 
-    Object* lookupObject(size_t hash) {
-      for (const auto& obj : m_objects) {
-        if (obj.first == hash)
-          return obj.second.ptr();
-      }
-      return nullptr;
-    }
+		size_t hash(const Desc& desc) {
+			static D3D11StateDescHash hasher;
+			return hasher.operator()(desc);
+		}
 
-    void pushState(size_t hash, const Desc& desc, Object* object) {
-      StatePair pair = StatePair{ hash, object };
-      m_objects.push_back(pair);
-    }
+		Object* lookupObject(size_t hash) {
+			for (const auto& obj : m_objects) {
+				if (obj.first == hash)
+					return obj.second.ptr();
+			}
+			return nullptr;
+		}
 
-  private:
+		void pushState(size_t hash, const Desc& desc, Object* object) {
+			StatePair pair = StatePair{ hash, object };
+			m_objects.push_back(pair);
+		}
 
-    std::vector<StatePair> m_objects;
+	private:
 
-  };
+		std::vector<StatePair> m_objects;
+
+	};
 
 }

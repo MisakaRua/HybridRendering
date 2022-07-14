@@ -6,37 +6,37 @@
 
 namespace dxup {
 
-  using Direct3DVolume9Base = Direct3DResource9<D3DRTYPE_VOLUME, IDirect3DVolume9>;
+	using Direct3DVolume9Base = Direct3DResource9<D3DRTYPE_VOLUME, IDirect3DVolume9>;
 
-  // A d3d9 surface is essentially some subresource of a d3d11 texture.
-  class Direct3DVolume9 final : public Direct3DVolume9Base {
-    
-  public:
+	// A d3d9 surface is essentially some subresource of a d3d11 texture.
+	class Direct3DVolume9 final : public Direct3DVolume9Base {
 
-    HRESULT WINAPI QueryInterface(REFIID riid, LPVOID* ppv) override;
-    HRESULT WINAPI GetContainer(REFIID riid, void** ppContainer) override;
-    HRESULT WINAPI GetDesc(D3DVOLUME_DESC *pDesc) override;
-    HRESULT WINAPI LockBox(D3DLOCKED_BOX* pLockedBox, CONST D3DBOX* pBox, DWORD Flags) override;
-    HRESULT WINAPI UnlockBox() override;
+	public:
 
-    UINT GetMip();
-    UINT GetSubresource();
+		HRESULT WINAPI QueryInterface(REFIID riid, LPVOID* ppv) override;
+		HRESULT WINAPI GetContainer(REFIID riid, void** ppContainer) override;
+		HRESULT WINAPI GetDesc(D3DVOLUME_DESC *pDesc) override;
+		HRESULT WINAPI LockBox(D3DLOCKED_BOX* pLockedBox, CONST D3DBOX* pBox, DWORD Flags) override;
+		HRESULT WINAPI UnlockBox() override;
 
-    ULONG STDMETHODCALLTYPE AddRef() override;
-    ULONG STDMETHODCALLTYPE Release() override;
+		UINT GetMip();
+		UINT GetSubresource();
 
-    void ClearResource();
-    void SetResource(DXUPResource* resource);
+		ULONG STDMETHODCALLTYPE AddRef() override;
+		ULONG STDMETHODCALLTYPE Release() override;
 
-    static Direct3DVolume9* Wrap(UINT mip, Direct3DDevice9Ex* device, IUnknown* container, DXUPResource* resource, const D3D9ResourceDesc& desc);
+		void ClearResource();
+		void SetResource(DXUPResource* resource);
 
-  private:
+		static Direct3DVolume9* Wrap(UINT mip, Direct3DDevice9Ex* device, IUnknown* container, DXUPResource* resource, const D3D9ResourceDesc& desc);
 
-    Direct3DVolume9(UINT mip, Direct3DDevice9Ex* device, IUnknown* container, DXUPResource* resource, const D3D9ResourceDesc& desc);
+	private:
 
-    IUnknown* m_container;
+		Direct3DVolume9(UINT mip, Direct3DDevice9Ex* device, IUnknown* container, DXUPResource* resource, const D3D9ResourceDesc& desc);
 
-    UINT m_mip;
-  };
+		IUnknown* m_container;
+
+		UINT m_mip;
+	};
 
 }
